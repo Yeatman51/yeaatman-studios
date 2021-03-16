@@ -1,6 +1,7 @@
 :root {
-    --org: rgb(202, 100, 16);
-    --blue: #094D84;
+
+    --teal: #00A99D;
+    --teal-d: #008C7E;
     --white: #ffffff;
     --gray-l: rgb(105, 103, 103);
     --gray-d: rgb(59, 59, 59);
@@ -16,7 +17,7 @@
     background-position: center;
     background-size: cover;
     background-image: url("../img/yeatman-studios-background.svg");
-    background-color: var(--blue);
+    background-color: var(--teal);
     padding: 4px;
 }
 

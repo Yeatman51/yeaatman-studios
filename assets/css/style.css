@@ -11,7 +11,6 @@
     border: none;
     width: 100%;
     height: 100%;
-    /* background-image: inherit; */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,13 +21,11 @@
 }
 
 .yeatman-studios-logo {
-    /* background-image: url("../img/yeatman-studios-logo.svg"); */
     border: none;
     width: 100%;
     padding: 20px;
     margin-top: 3px;
     margin-bottom: 12px;
-    /* background-image: inherit; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -48,7 +45,7 @@
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    width: 90vw;
+    width: 100%;
 }
 
 #nav-list li {
@@ -108,6 +105,7 @@
     #nav-bar {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
     #nav-list {
@@ -143,31 +141,118 @@
 .offering {
     color: var(--white);
     font-size: 3vw;
-    padding: 0.5vw;
+    margin: 2vh 0;
     text-shadow: 2px 2px 10px black;
     text-transform: uppercase;
 }
 
-/* Footer Styling */
+@media screen and (max-width: 768px) {
+    #list-wrapper {
+        margin: 0 0 0 40vw;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-footer {
+    #left-list, #right-list {
+        margin: 0;
+    }
+}
+
+/* Graphics Styling */
+
+.graphics-container {
     display: flex;
-    position: relative;
-    bottom:0;
-    align-items: center;
-    align-content: center;
     justify-content: center;
 }
 
-footer i {
-    color: var(--white);
-    font-size: 25px;
+.gray-placeholder {
+    width: 30vw;
+    height: 28vh;
+    border: 5px solid white;
+    background-color: rgb(184, 184, 184);
+    border-radius: 10px;
+    margin: 2vh 2vw;
 }
+
+@media screen and (max-width: 768px) {
+    .graphics-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gray-placeholder {
+        width: 90%;
+        height: 25vh;
+    }
+}
+
+/* Description Styling */
+
+.description-container {
+    padding: 5vh 5vw;
+}
+
+.description {
+    font-size: 2.5vw;
+    margin: 3vh 0;
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        font-size: 5vw;
+    }
+    
+}
+
+/* Footer Styling */
 
 .footer-container {
     display: flex;
     align-items: center;
-    align-content: center;
-  justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 3vh 0;
+}
+
+footer i {
+    color: var(--white);
+    font-size: 5vw;
+    margin: 0 2vw;
+}
+
+@media screen and (max-width: 768px) {
+
+    footer h1 {
+        font-size: 5vw;
+    }
     
+}
+
+/* Graphic Design Page Styling */
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.projects-container .gray-placeholder {
+    margin: 1vh 1vw;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+#smaller-logo {
+    width: 50%;
 }

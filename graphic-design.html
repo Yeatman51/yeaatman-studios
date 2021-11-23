@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./assets/img/img-bg/Yeatman_Studios_Logo4.png">
+    <!-- <link rel="icon" type="image/png" href="./assets/img/img-bg/Yeatman_Studios_Logo4.png"> -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
 integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -14,50 +14,71 @@ integrity="sha512-dBL5cY4qTt42J1cfabCHTYR7KMztyd+n4t2GhD6EH/MKWJIIHuEYckJ1nHEpTw
 <link rel="stylesheet" href="./assets/css/reset.css">
 <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>Graphic Design</title>
+    <title>Graphic Design | Yeatman Studios</title>
 </head>
 
 <body class="background-img">
-    <div class="yeatman-studios-logo"></div>
-    <nav>
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a class="active" href="graphic-design.html">Graphic Design</a>
-            <a href="photography.html">Photography</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
-
-    <div class="text-center text-white">
-        <p>
-            Yeatman Studios is here to bring your dreams to life with custom 
-            Graphic Designs made specifically for you.
-        </p>
+    <div class="logo-container">
+        <img src="./assets/img/yeatman-studios-logo.svg" 
+        class="img-fluid mx-auto"
+        id="smaller-logo"
+        alt="Yeatman Studios">
     </div>
 
-    <div>
-        
+    <nav id="nav-bar">
+        <div class="closed" id="ham-bars-wrapper">
+           <div id="ham-bar-1" class="ham-bar"></div>
+           <div id="ham-bar-2" class="ham-bar"></div>
+           <div id="ham-bar-3" class="ham-bar"></div>
+        </div>
+
+        <ul id="nav-list">
+           <li class="active-li" id="home-li"><a class="nav-link" href="index.html">Home</a></li>
+           <li id="graphic-design-li"><a class="nav-link active-link" href="graphic-design.html">Graphic Design</a></li>
+           <li id="web-dev-li"><a class="nav-link" href="web-dev.html">Web Development</a></li>
+        </ul>
+    </nav>
+
+    <div class="description-container">
+        <div class="text-center text-white description">
+            <p>
+                Yeatman Studios is here to bring your dreams to life with 
+                custom graphic designs made specifically for you.
+            </p>
+        </div>
+    </div>
+
+    <div class="projects-container">
+        <div class="gray-placeholder"></div>
+        <div class="gray-placeholder"></div>
+        <div class="gray-placeholder"></div>
+        <div class="gray-placeholder"></div>
+        <div class="gray-placeholder"></div>
+        <div class="gray-placeholder"></div>
+        <div class="gray-placeholder"></div>
+        <div class="gray-placeholder"></div>
+        <div class="gray-placeholder"></div>
     </div>
 
     <footer>
         <div class="footer-container">
-            <div class="icon-button">
-                <i class="fab fa-facebook"></i>
+            <div class="icons-container">
+                <div class="icon-button">
+                    <i class="fab fa-facebook"></i>
+                </div>
+    
+                <div class="icon-button">
+                    <i class="fab fa-twitter"></i>
+                </div>
+    
+                <div class="icon-button">
+                    <i class="fab fa-instagram"></i>
+                </div>
             </div>
-
-            <div class="icon-button">
-                <i class="fab fa-twitter"></i>
-            </div>
-
-            <div class="icon-button">
-                <i class="fab fa-instagram"></i>
-            </div>
-
-            
         </div>
         <h1 class="text-center text-white">YeatmanStudios@gmail.com</h1>
     </footer>
-    
+    <script src="assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 

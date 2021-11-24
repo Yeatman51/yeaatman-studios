@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>Web Development | Yeatman Studios</title>
+    <title>Contact Us | Yeatman Studios</title>
 </head>
 
 <body class="background-img">
@@ -34,25 +34,35 @@
         <ul id="nav-list">
            <li class="active-li" id="home-li"><a class="nav-link" href="index.html">Home</a></li>
            <li id="graphic-design-li"><a class="nav-link" href="graphic-design.html">Graphic Design</a></li>
-           <li id="web-dev-li"><a class="nav-link active-link" href="web-dev.html">Web Development</a></li>
-           <li id="contact-li"><a class="nav-link" href="contact.html">Contact Us</a></li>
+           <li id="web-dev-li"><a class="nav-link" href="web-dev.html">Web Development</a></li>
+           <li id="contact-li"><a class="nav-link active-link" href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
     <div class="description-container">
         <div class="text-center text-white description">
             <p>
-                Yeatman Studios is here to bring your dreams to life with 
-                websites made specifically for you.
+                Please contact us below with any professional inquiries.
             </p>
         </div>
     </div>
 
-    <div class="projects-container">
-        <img class="project-img" src="assets/img/web-img/account_login.png" alt="Account login page" />
-        <img class="project-img" src="assets/img/web-img/kayaking_adventure.png" alt="Kayaking Adventure page" />
-        <img class="project-img" src="assets/img/web-img/walnut_creek.png" alt="Walnut Creek page" />
-        <img class="project-img" id="phoenix-printing-img" src="assets/img/web-img/phoenix-printing.png" alt="Phoenix Printing page" />
+    <div id="form-wrapper">
+        <form id="contact-form" action="https://formsubmit.co/129c3c60fadf677d64decdb86e9487f6" method="POST">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="subject">Subject</label><br>
+            <input type="text" id="subject" name="subject" required><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <input id="submit" type="submit" value="Submit">
+        </form>
     </div>
 
     <footer>

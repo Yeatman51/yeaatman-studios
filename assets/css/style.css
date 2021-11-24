@@ -165,13 +165,16 @@
     justify-content: center;
 }
 
-.gray-placeholder {
-    width: 30vw;
-    height: 28vh;
-    border: 5px solid white;
-    background-color: rgb(184, 184, 184);
-    border-radius: 10px;
+.project-img {
+    width: 27vw;
+    height: auto;
     margin: 2vh 2vw;
+}
+
+.img-adjust {
+    width: auto !important;
+    height: 24vh !important;
+    align-self: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -180,9 +183,10 @@
         align-items: center;
     }
 
-    .gray-placeholder {
-        width: 90%;
-        height: 25vh;
+    .project-img {
+        width: 66.666%;
+        height: auto;
+        margin: 2vh 2vw;
     }
 }
 
@@ -226,11 +230,9 @@ footer i {
 }
 
 @media screen and (max-width: 768px) {
-
     footer h1 {
         font-size: 5vw;
     }
-    
 }
 
 /* Graphic Design Page Styling */
@@ -243,8 +245,13 @@ footer i {
     margin-bottom: 3vh;
 }
 
-.projects-container .gray-placeholder {
+.projects-container {
     margin: 1vh 1vw;
+}
+
+#img-collage {
+    width: 30% !important;
+    height: auto;
 }
 
 .logo-container {
@@ -255,4 +262,73 @@ footer i {
 
 #smaller-logo {
     width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #img-collage {
+        width: 80% !important;
+        height: auto;
+    }
+    
+}
+
+/* Web Development page styling */
+
+#phoenix-printing-img {
+    width: 50%;
+    height: auto;
+}
+
+/* Contact Us page styling */
+
+#form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 3vh 3vw;
+}
+
+#contact-form {
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 85%;
+    padding: 2vh 2vw;
+}
+
+#contact-form label {
+    color: white;
+    text-transform: uppercase;
+    padding-top: 1vh;
+}
+
+#contact-form input {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5em;
+    width: 100%;
+}
+
+#contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    height: 10vh;
+    line-height: 1.25;
+    overflow: scroll;
+    padding: 0.5em;
+    width: 100%;
+}
+
+#submit {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border: transparent !important;
+    padding: 1em !important;
+    text-transform: uppercase !important;
+}
+
+#submit:hover {
+    background-color: black !important;
+    transition: 0.5s ease-in-out;
 }

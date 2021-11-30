@@ -61,8 +61,14 @@
             <label for="message">Message</label><br>
             <textarea id="message" name="message"></textarea><br><br>
 
-            <input id="submit" type="submit" value="Submit">
+            <!-- Value will include the custom domain URL  -->
+            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+            
         </form>
+    </div>
+
+    <div id="submit-container">
+        <input id="submit" type="submit" value="Submit">
     </div>
 
     <footer>

@@ -134,7 +134,7 @@
 }
 
 #left-list, #right-list {
-    list-style-image: url('../img/hexagon-pngrepo-com.png');
+    list-style-image: url('../img/branding/YS\ Hexagon.png');
     margin: 2vh 5vw;
 }
 
@@ -160,22 +160,73 @@
 
 /* Graphics Styling */
 
-#compass-container {
-    display: flex;
-    justify-content: center;
+.carousel {
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.15);
-    margin: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4vh 0;
+    padding: 6vh 0;
 }
 
-.compass-img {
-    width: 50vw;
-    height: auto;
+.carousel img {
+    width: auto;
+    height: 45vh;
     margin: 2vh 2vw;
+}
+
+#left-arrow {
+    border: none;
+    height: 50px;
+    margin-right: 2vw;
+    width: 50px;
+}
+
+.controls-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.circle-control {
+    background-color: white;
+    border: transparent;
+    border-radius: 50%;
+    height: 25px;
+    margin: 0 2vw;
+    width: 25px;
+}
+
+.active-circle {
+    background-color: black !important;
+}
+
+#right-arrow {
+    border: none;
+    height: 50px;
+    margin-left: 2vw;
+    width: 50px;
+}
+
+#left-arrow, #right-arrow {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+#left-arrow:hover, #right-arrow:hover {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    filter: none;
+    -webkit-filter: none;
 }
 
 .graphics-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project-img {
@@ -190,8 +241,57 @@
     align-self: center;
 }
 
+.web-project-img {
+    width: auto;
+    height: 60vh;
+    margin: 2vh 4vw;
+}
+
+.vertical-imgs-container, .horizontal-imgs-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.web-project-img-vert {
+    width: auto;
+    height: 67vh;
+    margin: 2vh 4vw;
+}
+
+.web-project-img-hori {
+    width: 20%;
+    height: auto;
+    margin: 2vh 4vw;
+}
+
+.horizontal-imgs-container {
+    margin-top: 3vh;
+}
+
+#wall-pro {
+    width: 33%;
+}
+
 @media screen and (max-width: 768px) {
-    .graphics-container {
+
+    .carousel img {
+        width: auto;
+        height: 30vh;
+        margin: 2vh 2vw;
+    }
+
+    #left-arrow, #right-arrow {
+        width: 25px;
+        height: 25px;
+    }
+
+    .circle-control {
+        width: 13px;
+        height: 13px;
+    }
+
+    .graphics-container, .horizontal-imgs-container {
         flex-direction: column;
         align-items: center;
     }
@@ -200,6 +300,18 @@
         width: 66.666%;
         height: auto;
         margin: 2vh 2vw;
+    }
+
+    .web-project-img-hori {
+        width: 66.666%;
+        height: auto;
+        margin: 2vh 4vw;
+    }
+
+    #wall-pro {
+        width: 85%;
+        height: auto;
+        margin: 2vh 4vw;
     }
 }
 
@@ -228,6 +340,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 5vh 5vw;
 }
 
 .icons-container {
@@ -238,12 +351,16 @@
 
 footer i {
     color: var(--white);
-    font-size: 5vw;
+    font-size: 4vw;
     margin: 0 2vw;
 }
 
+.footer-email {
+    font-size: 3vw;
+}
+
 @media screen and (max-width: 768px) {
-    footer h1 {
+    .footer-email {
         font-size: 5vw;
     }
 }
@@ -314,8 +431,8 @@ footer i {
 }
 
 #contact-form input {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
     border-radius: 5px;
     color: white;
     padding: 0.5em;
@@ -323,8 +440,8 @@ footer i {
 }
 
 #contact-form textarea {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
     border-radius: 5px;
     color: white;
     height: 40vh;
@@ -346,14 +463,14 @@ footer i {
     border: 2px solid white;
     border-radius: 10px;
     color: white;
-    font-size: 1.5vw;
-    padding: 1em;
+    font-size: 3vw;
+    padding: 5px;
     text-transform: uppercase;
     width: 25%;
 }
 
 #submit:hover {
-    background-color: black !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     transition: 0.5s ease-in-out;
 }
 
